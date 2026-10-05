@@ -1,0 +1,20 @@
+{
+  "name": "booth-multiply-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "基二 Booth 有符号乘法寄存器与算术移位回放后端 (TypeScript + Node.js + SQLite)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run test:ts",
+    "test:ts": "tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\"",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*"
+  }
+}
