@@ -1,0 +1,19 @@
+{
+  "name": "booth-mult-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "基二 Booth 有符号乘法寄存器与算术移位回放后端（TypeScript + Node.js + SQLite）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo",
+    "test": "npm run test:build && node --test dist-test/test/booth.test.js",
+    "test:build": "tsc -p tsconfig.test.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  }
+}
